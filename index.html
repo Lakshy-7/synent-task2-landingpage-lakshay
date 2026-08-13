@@ -40,12 +40,12 @@
           <div class="avatar">A</div>
         </div>
         <div class="progress"><div class="progress-text"><span>Today's progress</span><strong>68%</strong></div><div class="progress-track"><span></span></div></div>
-        <div class="task-list">
-          <div class="task done"><span class="check">✓</span><div><strong>Review project notes</strong><small>Completed</small></div></div>
-          <div class="task"><span class="check"></span><div><strong>Design landing page</strong><small>Due today</small></div><span class="tag">Design</span></div>
-          <div class="task"><span class="check"></span><div><strong>Team stand-up meeting</strong><small>10:30 AM</small></div><span class="tag blue">Work</span></div>
+        <div class="task-list" id="taskList">
+          <div class="task done"><button class="check" type="button" aria-label="Mark Review project notes incomplete">✓</button><div><strong>Review project notes</strong><small>Completed</small></div><button class="delete-task" type="button" aria-label="Delete Review project notes">×</button></div>
+          <div class="task"><button class="check" type="button" aria-label="Mark Design landing page complete"></button><div><strong>Design landing page</strong><small>Due today</small></div><span class="tag">Design</span><button class="delete-task" type="button" aria-label="Delete Design landing page">×</button></div>
+          <div class="task"><button class="check" type="button" aria-label="Mark Team stand-up meeting complete"></button><div><strong>Team stand-up meeting</strong><small>10:30 AM</small></div><span class="tag blue">Work</span><button class="delete-task" type="button" aria-label="Delete Team stand-up meeting">×</button></div>
         </div>
-        <button class="add-task" type="button">+ Add a task</button>
+        <button class="add-task" id="addTask" type="button">+ Add a task</button>
       </div>
     </section>
 
@@ -67,11 +67,26 @@
 
     <section class="start" id="start">
       <h2>Ready for a more focused day?</h2>
-      <a class="primary-button" href="mailto:hello@focusflow.example">Get started for free <span>→</span></a>
+      <button class="primary-button signup-button" type="button">Get started for free <span>→</span></button>
     </section>
   </main>
 
   <footer><a class="logo" href="#home">focus<span>flow</span>.</a><p>© 2026 FocusFlow. Made for better days.</p></footer>
+
+  <div class="modal" id="signupModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" type="button" aria-label="Close signup form">×</button>
+      <p class="eyebrow">START FOR FREE</p>
+      <h2 id="modalTitle">A calmer day starts here.</h2>
+      <p>Enter your email to begin your FocusFlow journey.</p>
+      <form id="signupForm">
+        <label for="email">Email address</label>
+        <input id="email" type="email" placeholder="you@example.com" required />
+        <button class="primary-button" type="submit">Create free account <span>→</span></button>
+      </form>
+      <p class="form-message" id="formMessage" aria-live="polite"></p>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
