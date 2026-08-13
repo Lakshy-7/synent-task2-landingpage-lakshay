@@ -43,3 +43,13 @@ h1, h2 { margin: 0; letter-spacing: -2px; } h1 { font: 700 clamp(3.3rem, 6vw, 5.
 
 @media (max-width: 760px) { .navbar { padding: 20px; position: relative; }.menu-button { display: block; }.nav-links { display: none; position: absolute; top: 66px; left: 20px; right: 20px; z-index: 2; padding: 18px; border-radius: 12px; background: var(--paper); box-shadow: 0 8px 25px #1d2b2822; flex-direction: column; align-items: stretch; gap: 17px; }.nav-links.open { display: flex; }.nav-cta { text-align: center; }.hero { min-height: auto; padding: 58px 25px 80px; grid-template-columns: 1fr; gap: 60px; }.dashboard-card { max-width: 430px; width: calc(100% - 16px); margin: auto; }.feature-grid { grid-template-columns: 1fr 1fr; }.features, .start { padding: 70px 22px; } footer { padding: 23px 20px; flex-direction: column; gap: 12px; } }
 @media (max-width: 420px) { .feature-grid { grid-template-columns: 1fr; }.dashboard-card { padding: 18px; }.tag { display: none; } }
+.feature-grid article {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-grid article:hover,
+.feature-grid article:focus {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 22px rgba(29, 43, 40, 0.12);
+  outline: none;
+}
