@@ -25,6 +25,14 @@ h1, h2 { margin: 0; letter-spacing: -2px; } h1 { font: 700 clamp(3.3rem, 6vw, 5.
 .hero-text { max-width: 430px; color: var(--muted); line-height: 1.7; margin: 28px 0; font-size: 1.04rem; }
 .primary-button { display: inline-flex; align-items: center; gap: 15px; padding: 15px 21px; background: var(--ink); color: white; border-radius: 99px; font-size: .93rem; font-weight: 700; transition: transform .2s, background .2s; }.primary-button:hover { transform: translateY(-3px); background: #324740; }.primary-button span { font-size: 1.25rem; }
 .small-note { color: var(--muted); font-size: .78rem; margin-top: 15px; }
+.hero-stat {
+  max-width: 330px;
+  margin: 18px 0 0;
+  color: #557466;
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
 
 .dashboard-card { background: var(--paper); border: 1px solid #e6e5dd; border-radius: 20px; padding: 25px; box-shadow: 16px 16px 0 var(--mint); transform: rotate(2deg); }.card-top { display: flex; justify-content: space-between; align-items: center; }.welcome, .card-top h2 { margin: 0; }.welcome { color: var(--muted); font-size: .78rem; }.card-top h2 { margin-top: 4px; font-size: 1.1rem; letter-spacing: -.5px; }.avatar { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--orange); color: white; font-weight: 700; }.progress { margin: 26px 0; }.progress-text { display: flex; justify-content: space-between; font-size: .77rem; }.progress-track { height: 7px; overflow: hidden; border-radius: 8px; margin-top: 9px; background: #e7ede7; }.progress-track span { display: block; width: 68%; height: 100%; border-radius: inherit; background: #62af91; }
 .task-list { display: grid; gap: 10px; }.task { display: flex; align-items: center; gap: 11px; border: 1px solid var(--line); border-radius: 10px; padding: 12px; }.check { width: 18px; height: 18px; border: 1.5px solid #aebbb5; border-radius: 50%; flex: none; }.done .check { display: grid; place-items: center; border-color: #62af91; background: #62af91; color: white; font-size: .7rem; }.task strong, .task small { display: block; }.task strong { font-size: .8rem; }.done strong { text-decoration: line-through; color: var(--muted); }.task small { margin-top: 3px; color: var(--muted); font-size: .67rem; }.tag { margin-left: auto; padding: 4px 7px; background: #fff0e8; border-radius: 5px; color: #bf6845; font-size: .62rem; }.tag.blue { background: #e5f0fc; color: #507aa3; }.add-task { width: 100%; margin-top: 14px; padding: 10px; border: 1px dashed #abb8b1; border-radius: 8px; background: transparent; color: #557466; font: 600 .78rem "DM Sans", sans-serif; }
