@@ -4,11 +4,18 @@ A responsive landing page created for Synent Technologies Web Development Intern
 
 ## Features
 
-- Responsive layout for mobile and desktop
-- Hero section, feature cards, call-to-action, and footer
+- Responsive design for desktop and mobile
+- Hero section with call-to-action
+- Four interactive feature cards
 - Mobile navigation menu
-- Built with HTML, CSS, and JavaScript
+- Footer section
 
-## Run locally
+## Technologies Used
 
-Open `index.html` in any modern browser.
+- HTML5
+- CSS3
+- JavaScript
+
+## How to Run
+
+Open `index.html` in a web browser or run it using Live Server in VS Code.
